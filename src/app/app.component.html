@@ -1,0 +1,11 @@
+<app-card *ngFor="let s of cards;let i=index"  
+  [cardData]="s"
+  (fromFiglioEvnt)="fromFiglioEvntHandlr($event)" >
+</app-card>
+
+<h3>Stato delle carte</h3>
+Lo stato delle carte è il seguente
+
+<ul>
+  <li  *ngFor="let s of cards;let i=index" > lo stato della carta numero {{s.cardID}} è {{s.status}} </li>
+</ul>
