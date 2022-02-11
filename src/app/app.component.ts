@@ -10,6 +10,10 @@ export class AppComponent {
   cards:{ cardID: number , status:string , path:string }[]=[ 
     { cardID:0 , status:'default' , path: './assets/default.png' },
     { cardID:1 , status:'default' , path: './assets/default.png' },
+    { cardID:2 , status:'default' , path: './assets/default.png' },
+    { cardID:3 , status:'default' , path: './assets/default.png' },
+    { cardID:4 , status:'default' , path: './assets/default.png' },
+    { cardID:5 , status:'default' , path: './assets/default.png' }
   ] 
  
 
@@ -18,7 +22,7 @@ export class AppComponent {
     console.log("Sono il padre: dal figlio numero " + evntData.cardID+  " ho ricevuto status="+evntData.status )
     if (this.cards[evntData.cardID].status=='default') {
       this.cards[evntData.cardID].status='flipped'
-      this.cards[evntData.cardID].path='./assets/3cuori.png'
+      this.cards[evntData.cardID].path='./assets/queen_of_hearts2.png'
     } else {
       this.cards[evntData.cardID].status='default'
       this.cards[evntData.cardID].path='./assets/default.png'
